@@ -1,0 +1,177 @@
+header{
+width: 100%;
+min-height: 100vh;
+background:url(bg.jpg);
+background-position: center;
+background-size: cover;
+}
+
+.navigation{
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.menu{
+  flex: 1;
+  text-align: right;
+  
+}
+
+.menu ul li{
+ list-style-type: none;
+ display: inline-block;
+ padding: 2% 3%;
+
+ }
+
+ .logo img{
+     width: 100px;
+     height: 100px;
+     border-radius:50% ;
+ }
+ 
+ .content{
+     width: 90%;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+    text-align: center;
+     
+     padding: 2% 2%;
+ }
+
+ .content h1{
+     color: brown;
+     font-size: 90px;
+ }
+
+ .content h2{
+     color: cornflowerblue;
+     font-size: 60px;
+     
+ }
+
+ @media(max-width: 700px){
+  
+    header{
+        
+        width: 450px;
+        min-height: 100vh;
+        background:url(bg.jpg) no-repeat;
+        background-position:center;
+        background-size: cover;
+        overflow: hidden;
+        }
+   
+        .content h1{
+            color: brown;
+            font-size: 40px;
+        }
+
+        .menu ul li{
+            
+            display: inline-block;
+            padding-bottom: 1%
+            
+            
+        }
+
+        .logo img{
+            width: 50px;
+            height: 50px;
+            border-radius:50% ;
+        }
+        
+        
+       
+ }
+
+ .course{
+    text-align: center;
+ }
+
+ .row{
+    
+     display: flex;
+     justify-content: space-evenly;
+     
+ }
+
+ .column{
+     flex-basis: 31%;
+     background: #f3dddd;
+     opacity: 1;
+    
+     align-items: center;
+     margin: 80px ;
+     padding: 1%
+     
+ }
+
+ .column:hover{
+     box-shadow: 0 0 20px 0px rgba(29, 29, 29, 0.5);
+     transform: scale(1.1);
+ }
+
+ @media(max-width:700px){
+    .row{
+        
+        flex-direction: column;
+        margin-left: 30px;
+    }
+
+    .course h3{
+        font-size: 40px;
+        font-family:cursive;
+        color: olive;
+        border: 2px dashed olivedrab;
+        width: 200px;
+        margin-left: 100px;
+        border-radius: 30px;
+    }
+    .course{
+        font-size: 20px;
+    }
+     
+    .column{
+        
+        align-items: center;
+        margin-left: 10px;
+        margin: 30px ;
+        
+    
+    }
+ }
+
+ .places{
+     text-align: center;
+ }
+
+ .images{
+     display: flex;
+     justify-content: space-around;
+ }
+
+ .cities img{
+     border-radius: 5%;
+     background: rbga(226,0,0,0.7);
+ }
+
+ @media(max-width:700px){
+    .images{
+        flex-direction: column;
+      
+    }
+    .cities {
+        padding: 2%;
+    }
+    .places{
+        font-size: 30px;
+        color: midnightblue;
+    }
+ }
+ 
